@@ -1,0 +1,188 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Raleway:wght@300;400;600&display=swap");
+
+/* Importing components */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+
+/* ===========================
+   BASE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #0f0f0f;
+  color: #e8e0d0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+.section-about {
+  text-align: center;
+  padding: 80px 0;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.section-about h2 {
+  font-size: 2rem;
+  color: #c9a96e;
+  margin-bottom: 20px;
+}
+
+.section-about p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #b0a090;
+  font-size: 1rem;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #c9a96e;
+  padding-top: 70px;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+.cards-row {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+
+.card-dark {
+  flex: 1;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  border-radius: 4px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-dark:hover {
+  border-color: #c9a96e;
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.card-dark h3 {
+  font-size: 1.3rem;
+  color: #c9a96e;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.card-dark p {
+  color: #b0a090;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   RESERVATION
+=========================== */
+.reservation {
+  background-color: #1a1a1a;
+  border-top: 1px solid rgba(201, 169, 110, 0.2);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+  text-align: center;
+  padding: 80px 0;
+}
+
+.reservation h2 {
+  font-size: 2rem;
+  color: #c9a96e;
+  margin-bottom: 16px;
+}
+
+.reservation p {
+  color: #b0a090;
+  margin-bottom: 32px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.footer a {
+  color: #c9a96e;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 95%;
+  }
+  .cards-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.card-dark img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
